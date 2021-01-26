@@ -29,7 +29,7 @@ namespace Clinia.Extensions.Logging.Audit
         /// <example>logger.LogInformation(0, exception, "Error while processing request from {Address}", address)</example>
         public void LogInformation(EventId eventId, Exception exception, string message, params object[] args)
         {
-            Log(() => Logger.Log(LogLevel.Error, eventId, exception, message, args));
+            Log(() => Logger.Log(LogLevel.Information, eventId, exception, message, args));
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Clinia.Extensions.Logging.Audit
         /// <example>logger.LogInformation(0, "Processing request from {Address}", address)</example>
         public void LogInformation(EventId eventId, string message, params object[] args)
         {
-            Log(() => Logger.Log(LogLevel.Error, eventId, message, args));
+            Log(() => Logger.Log(LogLevel.Information, eventId, message, args));
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace Clinia.Extensions.Logging.Audit
         /// <example>logger.LogInformation(exception, "Error while processing request from {Address}", address)</example>
         public void LogInformation(Exception exception, string message, params object[] args)
         {
-            Log(() => Logger.Log(LogLevel.Error, exception, message, args));
+            Log(() => Logger.Log(LogLevel.Information, exception, message, args));
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace Clinia.Extensions.Logging.Audit
         /// <example>logger.LogInformation("Processing request from {Address}", address)</example>
         public void LogInformation(string message, params object[] args)
         {
-            Log(() => Logger.Log(LogLevel.Error, message, args));
+            Log(() => Logger.Log(LogLevel.Information, message, args));
         }
 
         /// <summary>
