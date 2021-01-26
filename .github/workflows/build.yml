@@ -46,6 +46,7 @@ jobs:
         run: dotnet test -c Release -f net5.0
         
       - uses: oprypin/find-latest-tag@v1
+        if: github.event_name != 'release'
         with:
           repository: clinia/csharp-audit-logging
           releases-only: true
@@ -67,7 +68,7 @@ jobs:
 
   prerelease:
     needs: build
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-18.04
     steps:
       - name: Download Artifact
