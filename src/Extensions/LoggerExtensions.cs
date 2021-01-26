@@ -1,6 +1,6 @@
-using Microsoft.Extensions.Logging;
+using Clinia.Extensions.Logging.Audit;
 
-namespace AuditLogging
+namespace Microsoft.Extensions.Logging
 {
     public static class LoggerExtensions
     {

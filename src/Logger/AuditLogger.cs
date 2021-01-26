@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Serilog.Context;
 
-namespace AuditLogging
+namespace Clinia.Extensions.Logging.Audit
 {
     public class AuditLogger
     {

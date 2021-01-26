@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace AuditLogging
+namespace Clinia.Extensions.Logging.Audit
 {
     public class AuditLoggerBuilder
     {

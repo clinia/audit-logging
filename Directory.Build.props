@@ -2,26 +2,12 @@
     <PropertyGroup Label="ProjectSettings">
         <Authors>Clinia</Authors>
         <Copyright>Copyright Clinia</Copyright>
-        <Product>Clinia.Logging.Extensions.AuditLogging</Product>
+        <Product>Clinia.Extensions.Logging.Audit</Product>
         <PackageProjectUrl>https://github.com/clinia/csharp-audit-logging</PackageProjectUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/clinia/csharp-audit-logging</RepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageTags>clinia;logging;audit;</PackageTags>
     </PropertyGroup>
-    <PropertyGroup Label="NugetSettings">
-        <PackageId>Clinia.Logging.Extensions.AuditLogging</PackageId>
-        <Version>1.0.0</Version>
-        <IsPackable>true</IsPackable>
-        <GeneratePackageOnBuild Condition="$(Configuration) == 'Release'">true</GeneratePackageOnBuild>
-        <PackageTags>clinia, .net, logging</PackageTags>
-        <PackageLicense>MIT</PackageLicense>
-        <SourcesPackage>true</SourcesPackage>
-    </PropertyGroup>
-
-    <PropertyGroup Label="ReleaseSettings" Condition="$(Configuration) == 'Release'">
-        <OutputPath>dist\</OutputPath>
-        <Optimize>true</Optimize>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>embedded</DebugType>
-    </PropertyGroup>
-
 </Project>
