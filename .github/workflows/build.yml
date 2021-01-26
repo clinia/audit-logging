@@ -47,7 +47,7 @@ jobs:
         
       - uses: oprypin/find-latest-tag@v1
         with:
-          repository: clinia/multi-tenant-csharp
+          repository: clinia/csharp-audit-logging
           releases-only: true
         id: octokit
 
