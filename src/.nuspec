@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Clinia.Logging.Extensions.AuditLogging</id>
+    <description>Small logging library that enhances logging for audit trail.</description>
+  </metadata>
+</package>
